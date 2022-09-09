@@ -17,7 +17,7 @@ const SignUpPage = () => {
                         <input className='p-2 rounded-md block' placeholder="Full name" />
                         <input className='p-2 rounded-md block' placeholder="Password" />
                     </form>
-                    <a href="#" onClick={(e) => {signInState === "signup" ? setPage("signin") : setPage("signup")}} className='underline text-center text-blue-100'>Already have an account?</a>
+                    <a onClick={(e) => {signInState === "signup" ? setPage("signin") : setPage("signup")}} className='text-[18px] underline text-center text-blue-100 cursor-pointer'>Already have an account?</a>
 
                 </>
 
@@ -28,7 +28,7 @@ const SignUpPage = () => {
                         <input className='p-2 rounded-md block' placeholder="Email" />
                         <input className='p-2 rounded-md block' placeholder="Password" />
                     </form>
-                    <a onClick={(e) => {signInState === "signup" ? setPage("signin") : setPage("signup")}} className='underline text-center text-blue-100'>Dont have an account?</a>
+                    <a onClick={(e) => {signInState === "signup" ? setPage("signin") : setPage("signup")}} className='text-[18px] underline text-center text-blue-100 cursor-pointer'>Dont have an account?</a>
                 </>
             }
         </div>
