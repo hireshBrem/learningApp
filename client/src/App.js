@@ -1,10 +1,20 @@
 import './App.css';
 
+//Pages
+import SignupPage from './components/SignUpPage';
+import ErrorPage from './components/ErrorPage';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 function App() {
   return (
-    <>
-      <h1 className="text-red-400">Welcome bois</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SignupPage/>} />
+        <Route path="*" element={<ErrorPage/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
