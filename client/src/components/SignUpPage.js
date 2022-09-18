@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 
 const SignUpPage = () => {
@@ -16,9 +15,9 @@ const SignUpPage = () => {
                         <input className='p-2 rounded-md block' placeholder="Email" />
                         <input className='p-2 rounded-md block' placeholder="Full name" />
                         <input className='p-2 rounded-md block' placeholder="Password" />
+                        <button className='bg-cyan-300 ml-[30%] p-2 rounded-md' type='submit'>Sign Up</button>
                     </form>
                     <a onClick={(e) => {signInState === "signup" ? setPage("signin") : setPage("signup")}} className='text-[18px] underline text-center text-blue-100 cursor-pointer'>Already have an account?</a>
-
                 </>
 
                 :
@@ -27,6 +26,7 @@ const SignUpPage = () => {
                     <form className='space-y-4'>
                         <input className='p-2 rounded-md block' placeholder="Email" />
                         <input className='p-2 rounded-md block' placeholder="Password" />
+                        <button className='bg-cyan-300 ml-[30%] p-2 rounded-md' type='submit'>Sign In</button>
                     </form>
                     <a onClick={(e) => {signInState === "signup" ? setPage("signin") : setPage("signup")}} className='text-[18px] underline text-center text-blue-100 cursor-pointer'>Dont have an account?</a>
                 </>
